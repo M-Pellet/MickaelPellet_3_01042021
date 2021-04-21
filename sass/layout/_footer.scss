@@ -1,0 +1,38 @@
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
+// footer_index
+.reference{
+    font-family: 'Roboto', sans-serif;
+    background-color: #353535;
+    color: white;
+    height: 220px;
+    &__broad{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 20px;
+    }
+    &__logo{
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.2em;
+    }
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0 0;
+    margin: 0 auto;
+    a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        height: 30px;
+        i{
+            width: 30px;
+        }
+    }
+}

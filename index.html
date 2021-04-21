@@ -17,21 +17,101 @@
             <img src="images/logo/ohmyfood.png" alt="Logo" class="logo__size">
         </div>
         <div class="tracking">
-            <form action="#">
+            <form action="#" class="tracking__icon">
                 <i class="fas fa-map-marker-alt"></i><input type="search" name="Localisation" class="tracking__search" placeholder="Paris, Belleville"/>
             </form>
         </div>
     </header>
-    <nav>
-        <div class="booking">
-            <div class="booking__firstline"><h1>Réservez le menu qui vous convient</h1></div>
-            <div class="booking__secondeline"><h2>Découvrez des restaurants d'exception, séléctionnés par nos soins.</h2></div>
-        <div class="btn">
-            <div class="btn__explore">
+    <nav class="explore">
+        <div class="explore__presentation">
+            <h1 class="explore__firstline">Réservez le menu qui vous convient</h1>
+            <h2 class="explore__secondeline">Découvrez des restaurants d'exception, séléctionnés par nos soins.</h2>
+        <div class="explore__btn">
+            <a class="explore__btn explore__btn--restaurant" href="#">
                 <p>Explorer nos restaurants</p>
-            </div> 
+            </a> 
         </div>
         </div>
     </nav>
+    <main>
+    <section>
+        <h2 class="title">Fonctionnement</h2>
+        <div class="choice">
+            <a class="choice__btn" href="#">
+                <span class="choice__btn__number">1</span>
+                <span class="choice__btn__icon"><i class="fas fa-mobile-alt"></i></span>
+                <span class="choice__btn__title">Choisissez un restaurant</span>
+            </a>
+            <a class="choice__btn" href="#">
+                <span class="choice__btn__number">2</span>
+                <span class="choice__btn__icon"><i class="fas fa-list-ul"></i></span>
+                <span class="choice__btn__title">Composez votre menu</span>
+            </a>
+            <a class="choice__btn" href="#">
+                <span class="choice__btn__number">3</span>
+                <span class="choice__btn__icon"><i class="fas fa-store"></i></span>
+                <span class="choice__btn__title">Déguster au restaurant</span>
+            </a>
+        </div>
+    </section>
+    <section class="listing">
+        <h2 class="title">Restaurants</h2>
+        <div class="listing__restaurant">
+            <a class="listing__restaurant__link" href="./lapalettedugout.html">
+                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" class="listing__restaurant__picture">
+            <div class="listing__information"> 
+                <div class="listing__information__name">La palette du goût</div>
+                <div class="listing__information__position">Ménilmontant</div>
+                <div class="listing__information__like"><i class="far fa-heart"></i></div>
+                <div class="listing__information__news">Nouveau</div>
+            </a>
+        </div>
+        </div>
+        <div class="listing__restaurant">
+            <a class="listing__restaurant__link" href="#">
+                <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" class="listing__restaurant__picture">
+            <div class="listing__information">
+                <div class="listing__information__name">La note enchantée</div>
+                <div class="listing__information__position">Charonne</div>
+                <div class="listing__information__like"><i class="far fa-heart"></i></div>
+                <div class="listing__information__news">Nouveau</div>
+            </a>
+            </div>
+        </div>
+        <div class="listing__restaurant">
+            <a class="listing__restaurant__link" href="#">
+                <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" class="listing__restaurant__picture">
+            <div class="listing__information">
+                <div class="listing__information__name">À la française</div>
+                <div class="listing__information__position">Cité Rouge</div>
+                <div class="listing__information__like"><i class="far fa-heart"></i></div>
+            </a>
+            </div>
+        </div>
+        <div class="listing__restaurant">
+            <a class="listing__restaurant__link" href="#">
+                <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" class="listing__restaurant__picture">
+            <div class="listing__information">
+                <div class="listing__information__name">Le délice des sens</div>
+                <div class="listing__information__position">Folie-Méricourt</div>
+                <div class="listing__information__like"><i class="far fa-heart"></i></div>
+            </a>
+            </div>
+        </div>
+    </section>
+    <footer class="reference">
+        <div class="reference__broad">
+            <h2 class="reference__logo">ohmyfood</h2>
+            <div class="reference__information">
+                <ul>
+                    <li><a href="#"><i class="fas fa-utensils"></i><p>Proposer un restaurant</p></a><li>
+                    <li><a href="#"><i class="fas fa-hands-helping"></i><p>partenaire</p></a></li>
+                    <li><a href="#"><p>Mention légales</p></a></li>
+                    <li><a href="mailto:mickaelpellet@me.com"><p>Contact</p></a></li>  
+                </ul>
+            </div>
+        </div>
+    </footer>
+    </main>
 </body>
 </html>

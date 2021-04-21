@@ -4,6 +4,7 @@ body {
 }
 
 header {
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,16 +12,21 @@ header {
 }
 
 .logo {
-  margin: auto;
-}
-
-@media all and (max-width: 600px) {
-  .logo {
-    width: 60%;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 .logo__size {
-  width: 100%;
+  object-fit: cover;
+  width: 45%;
+}
+.logo__arrow {
+  display: flex;
+  align-items: center;
+  font-size: 1.3em;
+  color: #353535;
+  left: 20px;
 }
 
 .tracking {
@@ -31,45 +37,206 @@ header {
   width: 100%;
   height: 50px;
   box-shadow: 0 3px 3px #cfcfcf inset;
-  margin-top: 20px;
+  margin-top: 15px;
+}
+.tracking__icon {
+  padding-right: 15px;
 }
 .tracking__search {
   border: none;
   background-color: #eaeaea;
   padding-left: 20px;
+  font-size: 0.9em;
   font-weight: bold;
-  width: 130px;
+  width: 150px;
 }
 
-.booking {
+.title {
+  font-family: "Roboto", sans-serif;
+  padding: 20px 0 0 20px;
+}
+
+.choice {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Roboto", sans-serif;
+  padding: 5px 0 0 20px;
+  height: 285px;
+}
+.choice__btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid transparent;
+  border-radius: 25px 25px;
+  box-shadow: 8px 5px 15px #7e7e7e;
+  background-color: #f6f6f6;
+  text-decoration: none;
+  margin: 0 0 0 10px;
+  height: 70px;
+  width: 90%;
+}
+.choice__btn__number {
+  position: relative;
+  color: white;
+  font-size: 0.7em;
+  text-align: center;
+  background: #9356DC;
+  border: 1px solid #9356DC;
+  border-radius: 50px 50px;
+  padding: 5px 8px;
+  margin-left: -10px;
+}
+.choice__btn__icon {
+  color: #7e7e7e;
+  font-size: 1.2em;
+  padding: 5px 5px;
+  margin-left: 15px;
+  width: 30px;
+}
+.choice__btn__title {
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 5px 5px;
+  color: black;
+}
+
+.listing {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #f6f6f6;
+  margin-top: 50px;
+  height: 1200px;
+  width: 100%;
+}
+.listing__restaurant {
+  border-radius: 15px 15px;
+  box-shadow: 8px 5px 15px #e7e7e7;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  margin: 0 20px;
+}
+.listing__restaurant__link {
+  text-decoration: none;
+}
+.listing__restaurant__picture {
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 175px;
+}
+.listing__information {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+  padding: 8px;
+  height: 60px;
+}
+.listing__information__name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 5px;
+}
+.listing__information__position {
+  font-size: 1em;
+  color: #7f7f7f;
+}
+.listing__information__like {
+  position: relative;
+  font-size: 1.5em;
+  font-style: normal;
+  color: #7f7f7f;
+  margin-left: 85%;
+  bottom: 40%;
+}
+.listing__information__news {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  color: #008766;
+  padding: 3px;
+  border: 1px solid #99E2D0;
+  border-radius: 3px;
+  background-color: #99E2D0;
+  width: 80px;
+  bottom: 250px;
+  left: 72%;
+}
+
+.explore {
   text-align: center;
   font-family: "Roboto", sans-serif;
   background-color: #f6f6f6;
   height: 285px;
 }
-.booking__firstline {
-  font-size: 0.9em;
-  padding: 20px 40px 0 40px;
+.explore__firstline {
+  font-size: 1.5em;
+  padding: 40px 75px 5px 65px;
   margin: 0;
-  height: 70px;
 }
-.booking__secondeline {
+.explore__secondeline {
   color: #898989;
-  font-weight: initial;
-  font-size: 0.6em;
-  padding: 0 10px 5px 10px;
+  font-size: 1.1em;
+  font-weight: normal;
+  padding: 5px 5px 5px 10px;
   margin: 0;
 }
-
-.btn {
-  width: 200px;
+.explore__btn {
+  display: flex;
+  justify-content: center;
   margin: 10px auto;
+  height: auto;
 }
-.btn__explore {
-  border: 1px solid transparent;
+.explore__btn--restaurant {
   border-radius: 35px 35px;
   background: linear-gradient(#FF79DA, #9356DC);
+  text-decoration: none;
   color: white;
+  margin: 17px 10px;
+  width: 200px;
+}
+
+.reference {
+  font-family: "Roboto", sans-serif;
+  background-color: #353535;
+  color: white;
+  height: 220px;
+}
+.reference__broad {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 20px;
+}
+.reference__logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.2em;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0 0;
+  margin: 0 auto;
+}
+ul a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  height: 30px;
+}
+ul a i {
+  width: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
