@@ -23,15 +23,20 @@ $color-tertiary: #99E2D0;
         &__btn{
             display: flex;
             justify-content: center;
-            margin: 10px auto;
+            // margin: 10px auto;
             height: auto;
         }    
         &__btn--restaurant{
             border-radius: 35px 35px;
+            box-shadow: 0 5px 14px #c3c3c3;
             background: linear-gradient($color-secondary, $color-primary);
             text-decoration: none;
             color: white;
             margin: 17px 10px;
             width: 200px;
-        }    
+            &:hover{
+                opacity: 0.85;
+                box-shadow: 3px 7px 4px #c3c3c3;
+            }
+        }
 }

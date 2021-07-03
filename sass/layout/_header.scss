@@ -12,15 +12,17 @@ $color-tertiary: #99E2D0;
         object-fit: cover;
         width: 45%; 
     }
+    &__return{
+        position: absolute;
+        left: 20px;
+    }
     &__arrow{
         display: flex;
         align-items: center;
-        font-size: 1.3em;
+        font-size: 1.2em;
         color: #353535;
-        left: 20px;
     }
 }
-
 
 .tracking{
     display: flex;

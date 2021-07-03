@@ -4,7 +4,6 @@ $color-tertiary: #99E2D0;
 
 // footer_index
 .reference{
-    font-family: 'Roboto', sans-serif;
     background-color: #353535;
     color: white;
     height: 220px;
@@ -12,10 +11,16 @@ $color-tertiary: #99E2D0;
         display: flex;
         flex-direction: column;
         padding: 0 0 0 20px;
+        @media (min-width: 1024px){
+            padding: 15px 0 0 0;
+            }
     }
     &__logo{
-        font-family: 'Shrikhand', cursive;
-        font-size: 1.2em;
+        @media (min-width: 1024px){
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+        }
     }
 }
 
@@ -25,6 +30,10 @@ ul{
     list-style: none;
     padding: 0 0;
     margin: 0 auto;
+    @media (min-width: 1024px){
+        flex-direction: row;
+        justify-content: space-around;
+    }
     a{
         display: flex;
         align-items: center;
