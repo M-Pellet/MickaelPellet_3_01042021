@@ -12,6 +12,11 @@
     <title>Ohmyfood</title>
 </head>
 <body>
+    <div class="spinner">
+        <div class="spinner__outercircle">
+            <div class="spinner__innercircle"></div>
+        </div>
+    </div>
     <header>
         <div class="logo">
             <img src="images/logo/ohmyfood.png" alt="Logo" class="logo__size">
@@ -54,49 +59,69 @@
             </a>
         </div>
     </section>
+    <h2 class="title">Restaurants</h2>
     <section class="listing">
-        <h2 class="title">Restaurants</h2>
         <div class="listing__restaurant">
             <a class="listing__restaurant__link" href="./lapalettedugout.html">
-                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" class="listing__restaurant__picture">
+                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant La palette du goût" class="listing__restaurant__picture">
             <div class="listing__information"> 
-                <div class="listing__information__name">La palette du goût</div>
-                <div class="listing__information__position">Ménilmontant</div>
-                <div class="listing__information__like"><i class="far fa-heart"></i></div>
+                <div>
+                    <div class="listing__information__name">La palette du goût</div> 
+                    <div class="listing__information__position">Ménilmontant</div>
+                </div>
+                <div>
+                    <i class="listing__information__like far fa-heart"></i>
+                    <i class="listing__information__like listing__information__like--full fas fa-heart"></i>
+                </div>
+            </div> 
                 <div class="listing__information__news">Nouveau</div>
             </a>
         </div>
-        </div>
         <div class="listing__restaurant">
-            <a class="listing__restaurant__link" href="#">
+            <a class="listing__restaurant__link" href="./lanoteenchantée.html">
                 <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" class="listing__restaurant__picture">
             <div class="listing__information">
-                <div class="listing__information__name">La note enchantée</div>
-                <div class="listing__information__position">Charonne</div>
-                <div class="listing__information__like"><i class="far fa-heart"></i></div>
+                <div>
+                    <div class="listing__information__name">La note enchantée</div>
+                    <div class="listing__information__position">Charonne</div>
+                </div>
+                <div>
+                    <i class="listing__information__like far fa-heart"></i>
+                    <i class="listing__information__like listing__information__like--full fas fa-heart"></i>
+                </div>
+            </div>
                 <div class="listing__information__news">Nouveau</div>
             </a>
-            </div>
         </div>
         <div class="listing__restaurant">
-            <a class="listing__restaurant__link" href="#">
+            <a class="listing__restaurant__link" href="./alafrancaise.html">
                 <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" class="listing__restaurant__picture">
             <div class="listing__information">
-                <div class="listing__information__name">À la française</div>
-                <div class="listing__information__position">Cité Rouge</div>
-                <div class="listing__information__like"><i class="far fa-heart"></i></div>
-            </a>
+                <div>
+                    <div class="listing__information__name">À la française</div>
+                    <div class="listing__information__position">Cité Rouge</div>
+                </div>
+                <div>
+                    <i class="listing__information__like far fa-heart"></i>
+                    <i class="listing__information__like listing__information__like--full fas fa-heart"></i>
+                </div>
             </div>
+            </a>
         </div>
         <div class="listing__restaurant">
-            <a class="listing__restaurant__link" href="#">
+            <a class="listing__restaurant__link" href="./ledelicedessens.html">
                 <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" class="listing__restaurant__picture">
             <div class="listing__information">
-                <div class="listing__information__name">Le délice des sens</div>
-                <div class="listing__information__position">Folie-Méricourt</div>
-                <div class="listing__information__like"><i class="far fa-heart"></i></div>
-            </a>
+                <div>
+                    <div class="listing__information__name">Le délice des sens</div>
+                    <div class="listing__information__position">Folie-Méricourt</div>
+                </div>
+                <div>
+                    <i class="listing__information__like far fa-heart"></i>
+                    <i class="listing__information__like listing__information__like--full fas fa-heart"></i>
+                </div>
             </div>
+            </a>
         </div>
     </section>
     <footer class="reference">
@@ -104,7 +129,7 @@
             <h2 class="reference__logo">ohmyfood</h2>
             <div class="reference__information">
                 <ul>
-                    <li><a href="#"><i class="fas fa-utensils"></i><p>Proposer un restaurant</p></a><li>
+                    <li><a href="#"><i class="fas fa-utensils"></i><p>Proposer un restaurant</p></a></li>
                     <li><a href="#"><i class="fas fa-hands-helping"></i><p>partenaire</p></a></li>
                     <li><a href="#"><p>Mention légales</p></a></li>
                     <li><a href="mailto:mickaelpellet@me.com"><p>Contact</p></a></li>  
