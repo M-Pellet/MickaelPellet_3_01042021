@@ -318,7 +318,7 @@ header {
 @media (min-width: 1440px) {
   .menu__bloc__listing {
     flex-direction: row;
-    width: 85%;
+    width: 95%;
   }
 }
 .menu__bloc__listing__title {
