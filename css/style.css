@@ -581,6 +581,11 @@ header {
   background-color: #f6f6f6;
   height: 285px;
 }
+@media (min-width: 1440px) {
+  .explore {
+    height: 240px;
+  }
+}
 .explore__firstline {
   font-size: 1.5em;
   padding: 40px 75px 5px 65px;
